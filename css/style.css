@@ -117,10 +117,43 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
   padding-top: 80px;
+}
+
+    /*CÓDIGO DO BACKGROUND ANIMADO*/
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #050505, #0d0d1a, #1a0f2a, #0b1a1f, #120913);
+  background-size: 400% 400%;
+  animation: hero-gradient 18s ease infinite;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(138, 43, 226, 0.25), transparent 40%),
+              radial-gradient(circle at 80% 30%, rgba(81, 161, 255, 0.18), transparent 45%),
+              radial-gradient(circle at 50% 80%, rgba(138, 43, 226, 0.2), transparent 50%),
+              linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72));
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes hero-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .hero-content h1 {
@@ -403,4 +436,3 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
-
