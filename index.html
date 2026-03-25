@@ -7,7 +7,7 @@
   <title>VertexWebSolutions</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<!--  link dos icones-->
+  <!--  link dos icones-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <meta name="description" content="">
@@ -50,6 +50,7 @@
   </div>
 </section>
 
+
 <section id="about">
   <div class="about-grid">
     <div class="about-text">
@@ -60,7 +61,9 @@
       <div style="margin-top: 30px;">
         <i class="fas fa-check" style="color:var(--primary); margin-right: 10px;"></i> Design Exclusivo<br>
         <i class="fas fa-check" style="color:var(--primary); margin-right: 10px;"></i> Suporte Dedicado<br>
-        <i class="fas fa-check" style="color:var(--primary); margin-right: 10px;"></i> Foco em Vendas
+        <i class="fas fa-check" style="color:var(--primary); margin-right: 10px;"></i> Foco em Vendas <br>
+        <i class="fas fa-check" style="color:var(--primary); margin-right: 10px;"></i> Projetos sob medida para cada negócios
+
       </div>
     </div>
 
@@ -101,33 +104,96 @@
   </div>
 </section>
 
-<section id="portfolio">
+<section id="portfolio" class="portfolio">
   <div class="section-title">
-    <h2>Trabalhos <span>Realizados</span></h2>
+    <h2>Projetos <span>em Destaque</span></h2>
+    <p class="section-subtitle">Soluções reais com foco em performance, clareza e resultado. Cada entrega é pensada para gerar valor.</p>
+  </div>
+
+  <div class="portfolio-stats">
+    <div class="portfolio-stat">
+      <h3>+10</h3>
+      <p>projetos entregues</p>
+    </div>
+    <div class="portfolio-stat">
+      <h3>98%</h3>
+      <p>satisfação dos clientes</p>
+    </div>
+    <div class="portfolio-stat">
+      <h3>7-14 dias</h3>
+      <p>tempo médio de entrega</p>
+    </div>
   </div>
 
   <div class="portfolio-grid">
-    <a class="portfolio-item" href="https://sonecaxm.github.io/comunidade/" target="_blank" rel="noopener noreferrer">
-      <img src="img/COMUNIDADE%20DE%20APOIO%20.png" alt="Projeto 1">
-      <div class="portfolio-overlay">
-        <h3>Comunidade de Apoio</h3>
-        <p>Agendamento Online</p>
+    <article class="portfolio-card">
+      <div class="portfolio-media">
+        <img src="img/apoio.png" alt="Comunidade de Apoio">
+        <span class="portfolio-badge">Landing Page</span>
       </div>
-    </a>
-    <a class="portfolio-item" href="https://alemdolimite2026-code.github.io/limite/index.html" target="_blank" rel="noopener noreferrer">
-      <img src="img/ALEM%20DO%20LIMITE.png" alt="Projeto 2">
-      <div class="portfolio-overlay">
-        <h3>Além do Limite</h3>
-        <p>Site Institucional</p>
+      <div class="portfolio-body">
+        <div class="portfolio-meta">
+          <h3>Comunidade de Apoio</h3>
+          <span>Agendamento Online</span>
+        </div>
+        <p>Fluxo simples, foco no contato direto e otimização para conversão em dispositivos móveis.</p>
+        <ul class="portfolio-tags">
+          <li>UI/UX</li>
+          <li>Performance</li>
+          <li>SEO</li>
+        </ul>
+        <div class="portfolio-actions">
+          <a class="btn-outline" href="https://sonecaxm.github.io/comunidade/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          <a class="btn-text" href="https://sonecaxm.github.io/comunidade/" target="_blank" rel="noopener noreferrer">Ver detalhes <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
       </div>
-    </a>
-    <a class="portfolio-item" href="https://sonecaxm.github.io/empreenda/" target="_blank" rel="noopener noreferrer">
-      <img src="img/TECNOPLACE.png" alt="Projeto 3">
-      <div class="portfolio-overlay">
-        <h3>Tecnoplace</h3>
-        <p>Marktplace Completo</p>
+    </article>
+
+    <article class="portfolio-card">
+      <div class="portfolio-media">
+        <img src="img/limite.png" alt="Além do Limite">
+        <span class="portfolio-badge">Institucional</span>
       </div>
-    </a>
+      <div class="portfolio-body">
+        <div class="portfolio-meta">
+          <h3>Além do Limite</h3>
+          <span>Marca & Presença Digital</span>
+        </div>
+        <p>Identidade visual forte, seções objetivas e narrativa clara para gerar confiança.</p>
+        <ul class="portfolio-tags">
+          <li>Branding</li>
+          <li>Copy</li>
+          <li>Responsivo</li>
+        </ul>
+        <div class="portfolio-actions">
+          <a class="btn-outline" href="https://alemdolimite2026-code.github.io/limite/index.html" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          <a class="btn-text" href="https://alemdolimite2026-code.github.io/limite/index.html" target="_blank" rel="noopener noreferrer">Ver detalhes <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="portfolio-card">
+      <div class="portfolio-media">
+        <img src="img/tecno.png" alt="Tecnoplace">
+        <span class="portfolio-badge">E-commerce</span>
+      </div>
+      <div class="portfolio-body">
+        <div class="portfolio-meta">
+          <h3>Tecnoplace</h3>
+          <span>Marketplace Completo</span>
+        </div>
+        <p>Catálogo organizado, chamadas visuais fortes e navegação com foco em vendas.</p>
+        <ul class="portfolio-tags">
+          <li>Checkout</li>
+          <li>Catálogo</li>
+          <li>Conversão</li>
+        </ul>
+        <div class="portfolio-actions">
+          <a class="btn-outline" href="https://sonecaxm.github.io/empreenda/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          <a class="btn-text" href="https://sonecaxm.github.io/empreenda/" target="_blank" rel="noopener noreferrer">Ver detalhes <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -139,7 +205,7 @@
   <div class="logo">VERTEX<span></span></div>
   <p>&copy; 2026 Vertex Solution Web. Todos os direitos reservados.</p>
 </footer>
-<script src="js/app.js"></script>
+
 
 </body>
 
